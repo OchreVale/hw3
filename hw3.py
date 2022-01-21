@@ -77,7 +77,7 @@ def create_folder(folder_name:str):
     try:
         os.mkdir(folder_name)
     except OSError:
-        print("Failed to create ",folder_name," folder in ", os.path.abspath(os.getcwd()))
+        print("Failed to create",folder_name,"folder in", os.path.abspath(os.getcwd()))
     else:
         print(folder_name," has been created in ", os.path.abspath(os.getcwd()))
 create_folder("hw3_problem8")
